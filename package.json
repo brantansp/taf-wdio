@@ -1,0 +1,19 @@
+{
+  "name": "testautomationframework",
+  "version": "1.0.0",
+  "description": "Selenium test automation framework using JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brantansp/TestAutomationFramework.git"
+  },
+  "author": "brantansp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brantansp/TestAutomationFramework/issues"
+  },
+  "homepage": "https://github.com/brantansp/TestAutomationFramework#readme"
+}
