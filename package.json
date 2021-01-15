@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brantansp/TestAutomationFramework/issues"
   },
-  "homepage": "https://github.com/brantansp/TestAutomationFramework#readme"
+  "homepage": "https://github.com/brantansp/TestAutomationFramework#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  }
 }
