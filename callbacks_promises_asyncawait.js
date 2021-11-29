@@ -1,3 +1,5 @@
+const person = require('./app')
+
 //regular function - sync execution
 function print(statement) {
     console.log(statement)
@@ -55,9 +57,10 @@ function asyncPrintWithAsyncAwait (statement){
 }
 
 async function printAll() {
-    await asyncPrintWithAsyncAwait('firstasyncawait')
-    await asyncPrintWithAsyncAwait('secondasyncawait')
-    await asyncPrintWithAsyncAwait('thirdasyncawait')
+    asyncPrintWithAsyncAwait('firstasyncawait')
+    asyncPrintWithAsyncAwait('secondasyncawait')
+    asyncPrintWithAsyncAwait('thirdasyncawait')
 }
 
 printAll()
+

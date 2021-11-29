@@ -4,7 +4,7 @@
   "description": "Selenium test automation framework using JavaScript",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/cucumber-js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,13 @@
     "url": "https://github.com/brantansp/TestAutomationFramework/issues"
   },
   "homepage": "https://github.com/brantansp/TestAutomationFramework#readme",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.1",
-    "selenium-webdriver": "^4.0.0-alpha.8"
+  "dependencies": {},
+  "devDependencies": {
+    "@wdio/cli": "^7.16.8",
+    "@wdio/local-runner": "^7.16.8",
+    "@wdio/mocha-framework": "^7.16.6",
+    "@wdio/spec-reporter": "^7.16.4",
+    "chromedriver": "^96.0.0",
+    "wdio-chromedriver-service": "^7.2.2"
   }
 }
