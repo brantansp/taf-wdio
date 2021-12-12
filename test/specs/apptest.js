@@ -1,5 +1,6 @@
-const globalTimeout = 15000;
+const chaiassert = require('chai').expect;
 
+const globalTimeout = 15000;
 
 describe ('Pando login test', async () => {
 
@@ -13,8 +14,11 @@ describe ('Pando login test', async () => {
 
         await click("//button[contains(text(),'Log in')]");
 
-        await waitForElementToBeDisplayed ("//main[@class='container-fluid main-content']",8000);
-        
+        await waitForElementToBeDisplayed ("//main[@class='container-fluid main-content']", globalTimeout);
+
+        chaiassert(await getText("//h1")).to.equals("Automation - Indents")
+
+        //await browser.saveScreenshot("successfulLogin.png")
     })
 })
 
@@ -42,4 +46,8 @@ async function waitForElementToBeDisplayed (elementLocator, timeout) {
         timeoutMsg:"Element is not displayed in the page even after wait time"
     });
 }
- 
+
+async function getText(elementLocator){
+    await waitForElementToBeDisplayed(elementLocator, globalTimeout);
+    return $(elementLocator).getText();
+}
